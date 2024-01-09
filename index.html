@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definição de Modelo de Rede</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        h1, h2 {
+            color: #007bff;
+        }
+
+        .card {
+            border: 1px solid #ced4da;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        h1, h2 {
+            transition: color 0.3s ease;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Compreendendo Redes</h1>
+        <p>As redes desempenham um papel vital em nossas vidas digitais, conectando pessoas, dispositivos e informações em todo o mundo. Vamos explorar os fundamentos que tornam isso possível.</p>
+<br>
+        <p><strong>Por que as redes são importantes?</strong></p>
+        <p>As redes facilitam a troca de dados entre diferentes dispositivos, permitindo comunicação instantânea, compartilhamento de recursos e acesso a informações em tempo real. Desde a navegação na web até chamadas de vídeo, as redes são a espinha dorsal da era digital.</p>
+<br>
+        <p><strong>Como as informações viajam nas redes?</strong></p>
+        <p>Nas redes, os dados são divididos em pacotes, pequenas unidades de informação. Esses pacotes seguem caminhos determinados, chamados de roteamento, para chegar ao seu destino. Isso garante uma transferência eficiente e confiável de informações.</p>
+<br>
+</div>
+<div class="card">
+    <h2>Tipos de Conexões em Rede</h2>
+    <ul>
+        <li><strong>Conexões com Fio:</strong> Utilizam cabos físicos, como Ethernet, para transmitir dados. São comuns em ambientes onde a estabilidade é crucial, como escritórios e residências.</li>
+        <li><strong>Conexões sem Fio (Wi-Fi):</strong> Permitem a comunicação através de ondas de rádio. São ideais para dispositivos móveis e locais onde a mobilidade é essencial.</li>
+    </ul>
+</div>
+
+<div class="card">
+        <p><strong>Desafios das Redes Modernas:</strong></p>
+        <p>O crescimento exponencial de dispositivos conectados e o aumento na demanda por largura de banda apresentam desafios. Tecnologias como 5G e IPv6 estão sendo desenvolvidas para lidar com essas demandas crescentes.</p>
+    </div>
+
+    <div class="card">
+        <h2>Tipos de Rede</h2>
+        <ul>
+            <li>
+                <strong>LAN (Local Area Network):</strong>
+                <p><strong>Como funciona:</strong> Na LAN, os computadores estão conectados por cabos ou Wi-Fi, formando uma rede local. Eles podem compartilhar arquivos e recursos rapidamente.</p>
+                <p><strong>Vantagens:</strong> Alta velocidade de transferência, baixa latência (tempo de resposta rápido).</p>
+                <p><strong>Desvantagens:</strong> Limitada a uma área geográfica pequena.</p>
+            </li>
+            <br>
+            <li>
+                <strong>WAN (Wide Area Network):</strong>
+                <p><strong>Como funciona:</strong> A WAN usa tecnologias como fibra óptica e satélites para conectar redes locais distantes, possibilitando a comunicação entre diferentes cidades ou até mesmo países.</p>
+                <p><strong>Vantagens:</strong> Conexão entre locais distantes, acesso a recursos globais.</p>
+                <p><strong>Desvantagens:</strong> Menor velocidade em comparação com LAN, custos mais elevados.</p>
+            </li>
+            <br>
+            <li>
+                <strong>MAN (Metropolitan Area Network):</strong>
+                <p><strong>Como funciona:</strong> A MAN conecta várias LANs em uma área metropolitana, proporcionando velocidades intermediárias e conectividade confiável.</p>
+                <p><strong>Vantagens:</strong> Velocidades intermediárias, conectividade confiável em áreas metropolitanas.</p>
+                <p><strong>Desvantagens:</strong> Menos velocidade do que uma LAN, custos associados.</p>
+            </li>
+            <br>
+            <li>
+                <strong>VPN (Virtual Private Network):</strong>
+                <p><strong>Como funciona:</strong> A VPN cria uma rede segura sobre a internet, permitindo que usuários acessem recursos privados remotamente de forma segura.</p>
+                <p><strong>Vantagens:</strong> Segurança, acesso remoto a recursos privados.</p>
+                <p><strong>Desvantagens:</strong> Pode ter uma leve redução na velocidade, configuração inicial pode ser complexa.</p>
+            </li>
+            <br>
+            <li>
+                <strong>PAN (Personal Area Network):</strong>
+                <p><strong>Como funciona:</strong> A PAN conecta dispositivos pessoais próximos, permitindo a troca de dados entre eles, geralmente usando Bluetooth.</p>
+                <p><strong>Vantagens:</strong> Conexão pessoal entre dispositivos próximos.</p>
+                <p><strong>Desvantagens:</strong> Alcance limitado, adequado apenas para dispositivos próximos.</p>
+            </li>
+            <br>
+            <li>
+                <strong>CAN (Campus Area Network):</strong>
+                <p><strong>Como funciona:</strong> A CAN conecta edifícios em um campus, permitindo comunicação eficiente entre diferentes departamentos e áreas.</p>
+                <p><strong>Vantagens:</strong> Comunicação eficiente em um ambiente específico.</p>
+                <p><strong>Desvantagens:</strong> Limitada ao campus, custos associados.</p>
+            </li>
+            <br>
+            <li>
+                <strong>SAN (Storage Area Network):</strong>
+                <p><strong>Como funciona:</strong> A SAN permite que vários dispositivos acessem e compartilhem recursos de armazenamento de maneira eficiente, melhorando o gerenciamento de dados.</p>
+                <p><strong>Vantagens:</strong> Compartilhamento eficiente de recursos de armazenamento.</p>
+                <p><strong>Desvantagens:</strong> Custos iniciais podem ser elevados, complexidade de configuração.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Tipos de Ligação</h2>
+        <ul>
+            <li>
+                <strong>Topologia em Estrela:</strong>
+                <p><strong>Como funciona:</strong> Cada dispositivo está conectado a um ponto central, facilitando a comunicação, mas dependente desse ponto central.</p>
+                <p><strong>Vantagens:</strong> Fácil de gerenciar, falhas em um dispositivo não afetam toda a rede.</p>
+                <p><strong>Desvantagens:</strong> Depende da saúde do ponto central, custos associados.</p>
+            </li>
+            <br>
+            <li>
+                <strong>Topologia em Anel:</strong>
+                <p><strong>Como funciona:</strong> Cada dispositivo está conectado ao próximo formando um círculo, permitindo comunicação eficiente, mas a falha de um dispositivo pode afetar a rede.</p>
+                <p><strong>Vantagens:</strong> Comunicação eficiente, cada dispositivo tem igual importância.</p>
+                <p><strong>Desvantagens:</strong> A falha de um dispositivo pode afetar toda a rede.</p>
+            </li>
+            <br>
+            <li>
+                <strong>Topologia em Barramento:</strong>
+                <p><strong>Como funciona:</strong> Todos os dispositivos compartilham o mesmo canal de comunicação, permitindo a comunicação, mas pode ocorrer congestionamento.</p>
+                <p><strong>Vantagens:</strong> Simples de configurar, custo relativamente baixo.</p>
+                <p><strong>Desvantagens:</strong> Vulnerável a congestionamento, a falha de um dispositivo pode interromper a comunicação.</p>
+            </li>
+<br>
+            <li>
+                <strong>Topologia em Malha:</strong>
+                <p><strong>Como funciona:</strong> Cada dispositivo está conectado a todos os outros, proporcionando várias rotas de comunicação e redundância.</p>
+                <p><strong>Vantagens:</strong> Redundância, confiabilidade, várias rotas de comunicação.</p>
+                <p><strong>Desvantagens:</strong> Complexidade de configuração, custos associados.</p>
+            </li>
+<br>
+            <li>
+                <strong>Topologia em Árvore:</strong>
+                <p><strong>Como funciona:</strong> Os dispositivos estão organizados hierarquicamente, facilitando a expansão e a comunicação eficiente.</p>
+                <p><strong>Vantagens:</strong> Hierarquia organizada, facilidade de expansão.</p>
+                <p><strong>Desvantagens:</strong> A falha de um nó principal pode afetar toda a subárvore.</p>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            // Adicione aqui o código JavaScript, se necessário
+        });
+    </script>
+
+</body>
+</html>
