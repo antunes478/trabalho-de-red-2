@@ -1,32 +1,244 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Image Gallery</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compreendendo Redes</title>
+    <style>
+          body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #c50e0e;
+            color: #333;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 70px;
+            padding-top: 100px;
+            overflow: hidden;
+            position: relative;
+        }
 
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .slider-container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            border: 1px solid #cccccca9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff9f;
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(211, 13, 13, 0.1);
+        }
+
+        .slide h1 {
+            color: #070707;
+        }
+
+        .slide p,
+        .slide li {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 10px; /* Ajuste a distância inferior conforme necessário */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .prev-btn,
+        .next-btn {
+            background-color: #030303;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev-btn:hover,
+        .next-btn:hover {
+            background-color: #000000;
+        }
+    </style>
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="container">
-  <h1>Bikes Image Gallery</h1>
 
-  <div class="gallery-wrap">
-    <div class="item item-1">
-      <h1></h1>
+<body>
+
+    <video autoplay loop muted>
+        <source src="black_-_13495 (540p).mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <h1>Compreendendo Redes</h1>
+                <p>As redes desempenham um papel vital em nossas vidas digitais, conectando pessoas, dispositivos e informações em todo o mundo.</p>
+                <p>Vamos explorar os fundamentos que tornam isso possível.</p>
+                <p><strong>Por que as redes são importantes?</strong></p>
+                <p>As redes facilitam a troca de dados entre diferentes dispositivos, permitindo comunicação instantânea, compartilhamento de recursos e acesso a informações em tempo real.</p>
+                <p>Desde a navegação na web até chamadas de vídeo, as redes são a espinha dorsal da era digital.</p>
+                <p><strong>Como as informações viajam nas redes?</strong></p>
+                <p>Nas redes, os dados são divididos em pacotes, pequenas unidades de informação.</p>
+                <p>Esses pacotes seguem caminhos determinados, chamados de roteamento, para chegar ao seu destino. Isso garante uma transferência eficiente e confiável de informações.</p>
+                <ul>
+                    <li><strong>Conexões com Fio:</strong> Utilizam cabos físicos, como Ethernet, para transmitir dados. São comuns em ambientes onde a estabilidade é crucial, como escritórios e residências.</li>
+                    <li><strong>Conexões sem Fio (Wi-Fi):</strong> Permitem a comunicação através de ondas de rádio. São ideais para dispositivos móveis e locais onde a mobilidade é essencial.</li>
+                </ul>
+            </div>
+
+            <!-- Slide 2 - Parte 1 -->
+            <div class="slide">
+                <h1>Tipos de Rede (Parte 1)</h1>
+                <ul>
+                    <li>
+                        <strong>LAN (Local Area Network):</strong>
+                        <p><strong>Como funciona:</strong> Na LAN, os computadores estão conectados por cabos ou Wi-Fi, formando uma rede local.</p>
+                        <p>Eles podem compartilhar arquivos e recursos rapidamente.</p>
+                        <p><strong>Vantagens:</strong> Alta velocidade de transferência, baixa latência (tempo de resposta rápido).</p>
+                        <p><strong>Desvantagens:</strong> Limitada a uma área geográfica pequena.</p>
+                    </li>
+                    <li>
+                        <strong>WAN (Wide Area Network):</strong>
+                        <p><strong>Como funciona:</strong> A WAN usa tecnologias como fibra óptica e satélites para conectar redes locais distantes.</p>
+                        <p>Isso possibilita a comunicação entre diferentes cidades ou até mesmo países.</p>
+                        <p><strong>Vantagens:</strong> Conexão entre locais distantes, acesso a recursos globais.</p>
+                        <p><strong>Desvantagens:</strong> Menor velocidade em comparação com LAN, custos mais elevados.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Slide 2 - Parte 2 -->
+            <div class="slide">
+                <h1>Tipos de Rede (Parte 2)</h1>
+                <ul>
+                    <li>
+                        <strong>MAN (Metropolitan Area Network):</strong>
+                        <p><strong>Como funciona:</strong> A MAN conecta várias LANs em uma área metropolitana, proporcionando velocidades intermediárias e conectividade confiável.</p>
+                        <p><strong>Vantagens:</strong> Velocidades intermediárias, conectividade confiável em áreas metropolitanas.</p>
+                        <p><strong>Desvantagens:</strong> Menos velocidade do que uma LAN, custos associados.</p>
+                    </li>
+                    <li>
+                        <strong>VPN (Virtual Private Network):</strong>
+                        <p><strong>Como funciona:</strong> A VPN cria uma rede segura sobre a internet, permitindo que usuários acessem recursos privados remotamente de forma segura.</p>
+                        <p><strong>Vantagens:</strong> Segurança, acesso remoto a recursos privados.</p>
+                        <p><strong>Desvantagens:</strong> Pode ter uma leve redução na velocidade, configuração inicial pode ser complexa.</p>
+                    </li>
+                    <li>
+                        <strong>PAN (Personal Area Network):</strong>
+                        <p><strong>Como funciona:</strong> A PAN tem alcance limitado, sendo adequada apenas para dispositivos próximos.</p>
+                        <p><strong>Desvantagens:</strong> Alcance limitado, adequado apenas para dispositivos próximos.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <h1>Tipos de Rede e Ligação </h1>
+                <ul>
+                    <li>
+                        <strong>CAN (Campus Area Network):</strong>
+                        <p><strong>Como funciona:</strong> A CAN conecta edifícios em um campus, permitindo comunicação eficiente entre diferentes departamentos e áreas.</p>
+                        <p><strong>Vantagens:</strong> Comunicação eficiente em um ambiente específico.</p>
+                        <p><strong>Desvantagens:</strong> Limitada ao campus, custos associados.</p>
+                    </li>
+                    <li>
+                        <strong>SAN (Storage Area Network):</strong>
+                        <p><strong>Como funciona:</strong> A SAN permite que vários dispositivos acessem e compartilhem recursos de armazenamento de maneira eficiente.</p>
+                        <p>Isso melhora o gerenciamento de dados.</p>
+                        <p><strong>Vantagens:</strong> Compartilhamento eficiente de recursos de armazenamento.</p>
+                        <p><strong>Desvantagens:</strong> Custos iniciais podem ser elevados, complexidade de configuração.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide">
+                <h1>Tipos de Ligação part 2</h1>
+                <p><strong>Topologia em Estrela:</strong></p>
+                <p>Como funciona: Cada dispositivo está conectado a um ponto central, facilitando a comunicação, mas dependente desse ponto central.</p>
+                <p>Vantagens: Fácil de gerenciar, falhas em um dispositivo não afetam toda a rede.</p>
+                <p>Desvantagens: Depende da saúde do ponto central, custos associados.</p>
+
+                <p><strong>Topologia em Anel:</strong></p>
+                <p>Como funciona: Cada dispositivo está conectado ao próximo formando um círculo, permitindo comunicação eficiente, mas a falha de um dispositivo pode afetar a rede.</p>
+                <p>Vantagens: Comunicação eficiente, cada dispositivo tem igual importância.</p>
+                <p>Desvantagens: A falha de um dispositivo pode afetar toda a rede.</p>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide">
+                <h1>Tipos de Ligação  parte 3</h1>
+                <p><strong>Topologia em Barramento:</strong></p>
+                <p>Como funciona: Todos os dispositivos compartilham o mesmo canal de comunicação, permitindo a comunicação, mas pode ocorrer congestionamento.</p>
+                <p>Vantagens: Simples de configurar, custo relativamente baixo.</p>
+                <p>Desvantagens: Vulnerável a congestionamento, a falha de um dispositivo pode interromper a comunicação.</p>
+
+                <p><strong>Topologia em Malha:</strong></p>
+                <p>Como funciona: Cada dispositivo está conectado a todos os outros, proporcionando várias rotas de comunicação e redundância.</p>
+                <p>Vantagens: Redundância, confiabilidade, várias rotas de comunicação.</p>
+                <p>Desvantagens: Complexidade de configuração, custos associados.</p>
+
+                <p><strong>Topologia em Árvore:</strong></p>
+                <p>Como funciona: Os dispositivos estão organizados hierarquicamente, facilitando a expansão e a comunicação eficiente.</p>
+                <p>Vantagens: Hierarquia organizada, facilidade de expansão.</p>
+                <p>Desvantagens: A falha de um nó principal pode afetar toda a subárvore.</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="prev-btn" onclick="prevSlide()">Anterior</button>
+            <button class="next-btn" onclick="nextSlide()">Próximo</button>
+        </div>
     </div>
-    <div class="item item-2"></div>
-    <div class="item item-3"></div>
-    <div class="item item-4"></div>
-    <div class="item item-5"></div>
-    <div class="item item-6"></div>
-    <div class="item item-7"></div>
-    <div class="item item-8"></div>
-    <div class="item item-9"></div>
-    <div class="item item-10"></div>
-  </div>
- </div>
+
+    <script>
+      let currentSlide = 0;
+      const totalSlides = document.querySelectorAll('.slide').length;
+  
+      function showSlide() {
+          // Corrigido a interpolação de string para aplicar o transform corretamente
+          document.querySelector('.slider').style.transform = `translateX(${-currentSlide * 100}%)`;
+      }
+  
+      function nextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          showSlide();
+      }
+  
+      function prevSlide() {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          showSlide();
+      }
+  </script>
+  
 
 </body>
+
 </html>
